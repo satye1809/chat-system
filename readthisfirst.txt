@@ -1,0 +1,22 @@
+this project is just only to show the working of chat system.however this can be made to more real live site by adding some more features.
+
+
+1->create a database in xampp.In this project my database name is "db".
+2->now create two table (signup,posts) under this database.
+3->sql query to create signup table is as follows:-
+CREATE TABLE signup (
+uid INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(200) NOT NULL,
+email VARCHAR(200) NOT NULL,
+password VARCHAR(200)
+)
+3->sql query to create signup table is as follows:-
+CREATE TABLE posts (
+id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+msg VARCHAR(200),
+name VARCHAR(200) NOT NULL,
+date TIMESTAMP default CURRRENT_TIMESTAMP
+)
+4->now open index.php and signup two different account
+5->login one account in one browser and login other account in another browser.
+6->send a message and refresh your another browser. :)
